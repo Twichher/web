@@ -8,7 +8,7 @@ def hello():
     return render_template('index.html', The_title='Hello World!', the_main='My favourite game')
 
 def log(name, phrase, time):
-    with open('jurnal.log', 'a') as took:
+    with open('jurnal.txt', 'a') as took:
         print(name,'wrote:', phrase, 'at', time, file=took)
 
 @app.route('/res', methods=['POST'])
